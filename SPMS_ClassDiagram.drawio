@@ -1,0 +1,191 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Class Diagram" id="cls-diagram-1">
+    <mxGraphModel dx="1271" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls_User" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#333333;" value="User" vertex="1">
+          <mxGeometry height="214" width="280" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_User_attrs" parent="cls_User" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- userId : String&lt;br&gt;- name : String&lt;br&gt;- email : String&lt;br&gt;- password : String&lt;br&gt;- role : String" vertex="1">
+          <mxGeometry height="110" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_User_methods" parent="cls_User" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ login() : boolean&lt;br&gt;+ logout() : void&lt;br&gt;+ updateProfile() : void" vertex="1">
+          <mxGeometry height="74" width="280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Employee" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#333333;" value="Employee" vertex="1">
+          <mxGeometry height="250" width="280" x="790" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Employee_attrs" parent="cls_Employee" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- employeeId : String&lt;br&gt;- name : String&lt;br&gt;- email : String&lt;br&gt;- phone : String&lt;br&gt;- department : String&lt;br&gt;- designation : String&lt;br&gt;- joiningDate : Date&lt;br&gt;- status : String" vertex="1">
+          <mxGeometry height="164" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Employee_methods" parent="cls_Employee" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ updateDetails() : void&lt;br&gt;+ viewProfile() : void" vertex="1">
+          <mxGeometry height="56" width="280" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Department" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#333333;" value="Department" vertex="1">
+          <mxGeometry height="178" width="280" x="1500" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Department_attrs" parent="cls_Department" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- deptId : String&lt;br&gt;- name : String&lt;br&gt;- description : String" vertex="1">
+          <mxGeometry height="74" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Department_methods" parent="cls_Department" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ addDepartment() : void&lt;br&gt;+ updateDepartment() : void&lt;br&gt;+ getEmployees() : List&lt;Employee&gt;" vertex="1">
+          <mxGeometry height="74" width="280" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Admin" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#333333;" value="Admin" vertex="1">
+          <mxGeometry height="142" width="240" x="40" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Admin_attrs" parent="cls_Admin" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- adminId : String" vertex="1">
+          <mxGeometry height="38" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Admin_methods" parent="cls_Admin" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ manageEmployees() : void&lt;br&gt;+ manageDepartments() : void&lt;br&gt;+ viewReports() : void" vertex="1">
+          <mxGeometry height="74" width="240" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_HRManager" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#333333;" value="HRManager" vertex="1">
+          <mxGeometry height="160" width="240" x="310" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_HRManager_attrs" parent="cls_HRManager" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- hrId : String" vertex="1">
+          <mxGeometry height="38" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_HRManager_methods" parent="cls_HRManager" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ addEmployee() : void&lt;br&gt;+ updateEmployee() : void&lt;br&gt;+ manageAttendance() : void&lt;br&gt;+ processPayroll() : void" vertex="1">
+          <mxGeometry height="92" width="240" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_ProjectManager" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#333333;" value="ProjectManager" vertex="1">
+          <mxGeometry height="142" width="240" x="580" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_ProjectManager_attrs" parent="cls_ProjectManager" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- pmId : String" vertex="1">
+          <mxGeometry height="38" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_ProjectManager_methods" parent="cls_ProjectManager" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ assignProject() : void&lt;br&gt;+ viewProjectDetails() : void&lt;br&gt;+ generateReports() : void" vertex="1">
+          <mxGeometry height="74" width="240" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Project" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#333333;" value="Project" vertex="1">
+          <mxGeometry height="232" width="280" x="1150" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Project_attrs" parent="cls_Project" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- projectId : String&lt;br&gt;- name : String&lt;br&gt;- description : String&lt;br&gt;- startDate : Date&lt;br&gt;- endDate : Date&lt;br&gt;- status : String" vertex="1">
+          <mxGeometry height="128" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Project_methods" parent="cls_Project" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ addProject() : void&lt;br&gt;+ updateProject() : void&lt;br&gt;+ getTeamMembers() : List&amp;lt;Employee&amp;gt;" vertex="1">
+          <mxGeometry height="74" width="280" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_ProjectAllocation" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#333333;" value="ProjectAllocation" vertex="1">
+          <mxGeometry height="178" width="260" x="1530" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_ProjectAllocation_attrs" parent="cls_ProjectAllocation" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- allocationId : String&lt;br&gt;- role : String&lt;br&gt;- allocationDate : Date" vertex="1">
+          <mxGeometry height="74" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_ProjectAllocation_methods" parent="cls_ProjectAllocation" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ assignProject() : void&lt;br&gt;+ updateAllocation() : void&lt;br&gt;+ removeAllocation() : void" vertex="1">
+          <mxGeometry height="74" width="260" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Attendance" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#333333;" value="Attendance" vertex="1">
+          <mxGeometry height="214" width="320" x="320" y="752" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Attendance_attrs" parent="cls_Attendance" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- attendanceId : String&lt;br&gt;- date : Date&lt;br&gt;- status : String&lt;br&gt;- checkIn : Time&lt;br&gt;- checkOut : Time" vertex="1">
+          <mxGeometry height="110" width="320" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Attendance_methods" parent="cls_Attendance" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ markAttendance() : void&lt;br&gt;+ updateAttendance() : void&lt;br&gt;+ getAttendanceReport() : List&amp;lt;Attendance&amp;gt;" vertex="1">
+          <mxGeometry height="74" width="320" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Payroll" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#CCFFFF;strokeColor=#333333;" value="Payroll" vertex="1">
+          <mxGeometry height="250" width="280" x="740" y="752" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Payroll_attrs" parent="cls_Payroll" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- payrollId : String&lt;br&gt;- month : String&lt;br&gt;- basicSalary : double&lt;br&gt;- allowances : double&lt;br&gt;- deductions : double&lt;br&gt;- netSalary : double&lt;br&gt;- generatedDate : Date" vertex="1">
+          <mxGeometry height="146" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Payroll_methods" parent="cls_Payroll" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ calculateSalary() : double&lt;br&gt;+ generatePayroll() : void&lt;br&gt;+ getPayrollDetails() : void" vertex="1">
+          <mxGeometry height="74" width="280" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Performance" parent="1" style="swimlane;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=1;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#333333;" value="Performance" vertex="1">
+          <mxGeometry height="214" width="280" x="1040" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Performance_attrs" parent="cls_Performance" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];" value="- performanceId : String&lt;br&gt;- employeeId : String&lt;br&gt;- rating : String&lt;br&gt;- reviewDate : Date&lt;br&gt;- comments : String" vertex="1">
+          <mxGeometry height="110" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_Performance_methods" parent="cls_Performance" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=6;spacingBottom=6;fontSize=12;html=1;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=#333333;strokeWidth=1;points=[[0,0,0],[1,0,0],[0,1,0],[1,1,0]];shape=partialRectangle;top=1;left=0;right=0;bottom=0;" value="+ addPerformance() : void&lt;br&gt;+ updatePerformance() : void&lt;br&gt;+ getPerformance() : String" vertex="1">
+          <mxGeometry height="74" width="280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=22;align=center;verticalAlign=middle;arcSize=20;" value="Software Personnel Management System&lt;br&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;Class Diagram&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="600" x="630" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="roles_title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;" value="Roles" vertex="1">
+          <mxGeometry height="30" width="360" x="1500" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="roles_body" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;verticalAlign=top;" value="&lt;table style=&#39;width:100%;border-collapse:collapse;font-size:12px;&#39;&gt;&lt;tr&gt;&lt;td style=&#39;padding:4px;font-weight:bold;&#39;&gt;Admin&lt;/td&gt;&lt;td style=&#39;padding:4px;&#39;&gt;- Manages all data and reports&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#39;padding:4px;font-weight:bold;&#39;&gt;HR Manager&lt;/td&gt;&lt;td style=&#39;padding:4px;&#39;&gt;- Handles employee, attendance &amp; payroll&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#39;padding:4px;font-weight:bold;&#39;&gt;Project Manager&lt;/td&gt;&lt;td style=&#39;padding:4px;&#39;&gt;- Manages project allocation and team&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#39;padding:4px;font-weight:bold;&#39;&gt;Employee&lt;/td&gt;&lt;td style=&#39;padding:4px;&#39;&gt;- Views and updates personal information&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="140" width="360" x="1500" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="cls_User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="cls_Employee" value="manages">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="cls_Employee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="cls_Department" value="belongs to">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="cls_Employee" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;startArrow=block;startFill=1;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;" target="cls_Project" value="works on">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="cls_Project" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="cls_ProjectAllocation" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="cls_Performance" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=11;;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.7;entryY=1;entryDx=0;entryDy=0;" target="cls_Employee" value="has">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1179.86" y="709.86" />
+              <mxPoint x="986.14" y="709.86" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sSvI2YIzDI-xCuAHZRQ_-3" edge="1" parent="1" source="cls_Payroll" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.657;exitY=0.025;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.478;entryY=1.071;entryDx=0;entryDy=0;entryPerimeter=0;" target="cls_Employee_methods" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="870" y="693" as="sourcePoint" />
+            <mxPoint x="920" y="643" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MC4VOM7StxTr0ld_boyQ-4" connectable="0" parent="sSvI2YIzDI-xCuAHZRQ_-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="has" vertex="1">
+          <mxGeometry relative="1" x="0.0416" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sSvI2YIzDI-xCuAHZRQ_-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="cls_ProjectManager" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="400" />
+            </Array>
+            <mxPoint x="150" y="400" as="sourcePoint" />
+            <mxPoint x="750" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sSvI2YIzDI-xCuAHZRQ_-5" edge="1" parent="1" source="cls_HRManager" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="810" y="380" as="sourcePoint" />
+            <mxPoint x="430" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sSvI2YIzDI-xCuAHZRQ_-7" edge="1" parent="1" source="cls_Admin" style="endArrow=none;html=1;rounded=0;exitX=0.457;exitY=0.004;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="810" y="380" as="sourcePoint" />
+            <mxPoint x="149.68" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sSvI2YIzDI-xCuAHZRQ_-8" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;entryX=0.714;entryY=1.081;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;" target="cls_User_methods" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="400" as="sourcePoint" />
+            <mxPoint x="860" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MC4VOM7StxTr0ld_boyQ-1" edge="1" parent="1" source="cls_Attendance" style="endArrow=block;html=1;rounded=0;entryX=0.262;entryY=0.975;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.365;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;endFill=1;startArrow=block;startFill=1;" target="cls_Employee_methods" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="436.8" y="680" />
+              <mxPoint x="863.36" y="680" />
+            </Array>
+            <mxPoint x="440" y="680" as="sourcePoint" />
+            <mxPoint x="880" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MC4VOM7StxTr0ld_boyQ-3" connectable="0" parent="MC4VOM7StxTr0ld_boyQ-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="has" vertex="1">
+          <mxGeometry relative="1" x="0.3449" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

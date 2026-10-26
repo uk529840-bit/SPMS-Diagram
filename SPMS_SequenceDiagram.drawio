@@ -1,0 +1,374 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Sequence Diagram" id="seq-diagram-1">
+    <mxGraphModel dx="699" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1340" pageHeight="1850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="act_emp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9c7f0;strokeColor=#8e5cc4;fontSize=13;fontStyle=1;" value="Employee&lt;br&gt;(User)" vertex="1">
+          <mxGeometry height="90" width="180" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="act_sys" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b9dcf5;strokeColor=#3f7fb3;fontSize=13;fontStyle=1;" value="System&lt;br&gt;(SPMS Web/App)" vertex="1">
+          <mxGeometry height="90" width="180" x="340" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c6e8cf;strokeColor=#4ea365;fontSize=13;fontStyle=1;" value="Database" vertex="1">
+          <mxGeometry height="90" width="180" x="610" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffd9a8;strokeColor=#d98a2b;fontSize=13;fontStyle=1;" value="Project Manager&lt;br&gt;(for allocation)" vertex="1">
+          <mxGeometry height="90" width="180" x="880" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pay" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f9c7d9;strokeColor=#c25a83;fontSize=13;fontStyle=1;" value="Payroll System&lt;br&gt;(Salary Module)" vertex="1">
+          <mxGeometry height="90" width="180" x="1120" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ll_emp" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="190" as="sourcePoint" />
+            <mxPoint x="110" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_sys" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="190" as="sourcePoint" />
+            <mxPoint x="430" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_db" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="190" as="sourcePoint" />
+            <mxPoint x="700" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_pm" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="190" as="sourcePoint" />
+            <mxPoint x="970" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ll_pay" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="190" as="sourcePoint" />
+            <mxPoint x="1210" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=20;align=center;verticalAlign=middle;arcSize=15;" value="Software Personnel Management System&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;Sequence Diagram&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="500" x="340" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="1. Login (username, password)">
+          <mxGeometry relative="1" x="-0.0625" y="20" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <mxPoint x="102" y="230" as="sourcePoint" />
+            <mxPoint x="422" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="2. Validate credentials">
+          <mxGeometry relative="1" x="-0.037" y="20" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <mxPoint x="422" y="270" as="sourcePoint" />
+            <mxPoint x="692" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="3. Authentication result">
+          <mxGeometry relative="1" x="0.037" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="708" y="300" as="sourcePoint" />
+            <mxPoint x="438" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="4. Login successful (Dashboard)">
+          <mxGeometry relative="1" y="-30" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="438" y="320" as="sourcePoint" />
+            <mxPoint x="118" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_emp1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9c7f0;strokeColor=#8e5cc4;" value="" vertex="1">
+          <mxGeometry height="120" width="16" x="102" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sys1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b9dcf5;strokeColor=#3f7fb3;" value="" vertex="1">
+          <mxGeometry height="120" width="16" x="422" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="a_db1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c6e8cf;strokeColor=#4ea365;" value="" vertex="1">
+          <mxGeometry height="40" width="16" x="692" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" source="a_emp2" style="html=1;endArrow=block;endFill=1;fontSize=11;exitX=0.804;exitY=0.092;exitDx=0;exitDy=0;exitPerimeter=0;" value="5. View / Update Employee Information">
+          <mxGeometry relative="1" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="100" y="410" as="sourcePoint" />
+            <mxPoint x="420" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="6. Fetch / Update employee data">
+          <mxGeometry relative="1" x="-0.1111" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="422" y="450" as="sourcePoint" />
+            <mxPoint x="692" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;startArrow=none;startFill=0;" value="7. Employee data">
+          <mxGeometry relative="1" x="0.3926" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="708" y="480" as="sourcePoint" />
+            <mxPoint x="438" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="8. Display employee details">
+          <mxGeometry relative="1" x="0.125" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="438" y="510" as="sourcePoint" />
+            <mxPoint x="118" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_emp2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9c7f0;strokeColor=#8e5cc4;" value="" vertex="1">
+          <mxGeometry height="120" width="16" x="102" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sys2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b9dcf5;strokeColor=#3f7fb3;" value="" vertex="1">
+          <mxGeometry height="120" width="16" x="422" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="a_db2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c6e8cf;strokeColor=#4ea365;" value="" vertex="1">
+          <mxGeometry height="40" width="16" x="692" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="9. Allocate Project to Employee">
+          <mxGeometry relative="1" x="-0.125" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="100" y="590" as="sourcePoint" />
+            <mxPoint x="420" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="10. Request project allocation">
+          <mxGeometry relative="1" x="-0.1481" y="20" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <mxPoint x="422" y="630" as="sourcePoint" />
+            <mxPoint x="962" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="11. Allocation confirmation">
+          <mxGeometry relative="1" x="0.1852" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="978" y="660" as="sourcePoint" />
+            <mxPoint x="438" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="12. Save project assignment">
+          <mxGeometry relative="1" x="0.2593" y="20" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <mxPoint x="422" y="710" as="sourcePoint" />
+            <mxPoint x="692" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m13" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="13. Success">
+          <mxGeometry relative="1" x="0.037" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="708" y="740" as="sourcePoint" />
+            <mxPoint x="438" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m14" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="14. Project allocation updated">
+          <mxGeometry relative="1" x="0.125" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="438" y="770" as="sourcePoint" />
+            <mxPoint x="118" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_emp3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9c7f0;strokeColor=#8e5cc4;" value="" vertex="1">
+          <mxGeometry height="200" width="16" x="102" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sys3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b9dcf5;strokeColor=#3f7fb3;" value="" vertex="1">
+          <mxGeometry height="200" width="16" x="422" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="a_pm3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffd9a8;strokeColor=#d98a2b;" value="" vertex="1">
+          <mxGeometry height="40" width="16" x="962" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="a_db3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c6e8cf;strokeColor=#4ea365;" value="" vertex="1">
+          <mxGeometry height="40" width="16" x="692" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="m15" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="15. Mark Attendance">
+          <mxGeometry relative="1" x="-0.25" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="102" y="850" as="sourcePoint" />
+            <mxPoint x="422" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="16. Store attendance record">
+          <mxGeometry relative="1" x="-0.1852" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="420" y="890" as="sourcePoint" />
+            <mxPoint x="690" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m17" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="17. Attendance saved">
+          <mxGeometry relative="1" x="0.1852" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="708" y="920" as="sourcePoint" />
+            <mxPoint x="438" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m18" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="18. Attendance updated">
+          <mxGeometry relative="1" x="0.1875" y="-20" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <mxPoint x="440" y="950" as="sourcePoint" />
+            <mxPoint x="120" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_emp4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9c7f0;strokeColor=#8e5cc4;" value="" vertex="1">
+          <mxGeometry height="120" width="16" x="102" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sys4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b9dcf5;strokeColor=#3f7fb3;" value="" vertex="1">
+          <mxGeometry height="120" width="16" x="422" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="a_db4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c6e8cf;strokeColor=#4ea365;" value="" vertex="1">
+          <mxGeometry height="40" width="16" x="692" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="frag_alt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#8e5cc4;verticalAlign=top;" value="" vertex="1">
+          <mxGeometry height="200" width="940" x="22" y="975" as="geometry" />
+        </mxCell>
+        <mxCell id="frag_alt_tag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#8e5cc4;strokeColor=#8e5cc4;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;fontColor=#ffffff;" value="alt" vertex="1">
+          <mxGeometry height="26" width="70" x="30" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="frag_alt_label" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=12;" value="[When viewing salary]" vertex="1">
+          <mxGeometry height="26" width="250" x="115" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="m19" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="19. View Salary Details">
+          <mxGeometry relative="1" x="0.1875" y="15" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <Array as="points">
+              <mxPoint x="262" y="1060" />
+            </Array>
+            <mxPoint x="102" y="1060" as="sourcePoint" />
+            <mxPoint x="422" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="20. Fetch salary details">
+          <mxGeometry relative="1" x="-0.037" y="20" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <mxPoint x="422" y="1100" as="sourcePoint" />
+            <mxPoint x="692" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m21" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="21. Salary information">
+          <mxGeometry relative="1" x="0.1852" y="-15" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="708" y="1125" as="sourcePoint" />
+            <mxPoint x="438" y="1125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m22" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="22. Display salary details">
+          <mxGeometry relative="1" x="0.1875" y="-25" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <mxPoint x="438" y="1150" as="sourcePoint" />
+            <mxPoint x="118" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_emp5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9c7f0;strokeColor=#8e5cc4;" value="" vertex="1">
+          <mxGeometry height="110" width="16" x="102" y="1055" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sys5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b9dcf5;strokeColor=#3f7fb3;" value="" vertex="1">
+          <mxGeometry height="110" width="16" x="422" y="1055" as="geometry" />
+        </mxCell>
+        <mxCell id="a_db5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c6e8cf;strokeColor=#4ea365;" value="" vertex="1">
+          <mxGeometry height="35" width="16" x="692" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="frag_loop" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#3f9fb3;verticalAlign=top;" value="" vertex="1">
+          <mxGeometry height="200" width="940" x="30" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="frag_loop_tag" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#3f9fb3;strokeColor=#3f9fb3;fontStyle=1;fontSize=12;align=center;verticalAlign=middle;fontColor=#ffffff;" value="loop" vertex="1">
+          <mxGeometry height="26" width="70" x="30" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="frag_loop_label" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=12;" value="[For performance review]" vertex="1">
+          <mxGeometry height="26" width="250" x="115" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="m23" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="23. View Performance">
+          <mxGeometry relative="1" x="-0.1875" y="15" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <mxPoint x="100" y="1300" as="sourcePoint" />
+            <mxPoint x="420" y="1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m24" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="24. Fetch performance data">
+          <mxGeometry relative="1" x="0.037" y="30" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="422" y="1327" as="sourcePoint" />
+            <mxPoint x="692" y="1327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m25" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="25. Performance report">
+          <mxGeometry relative="1" x="0.2593" y="-15" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="708" y="1355" as="sourcePoint" />
+            <mxPoint x="438" y="1355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m26" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="26. Display performance details">
+          <mxGeometry relative="1" x="0.1875" y="-15" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <Array as="points" />
+            <mxPoint x="438" y="1380" as="sourcePoint" />
+            <mxPoint x="118" y="1380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_emp6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9c7f0;strokeColor=#8e5cc4;" value="" vertex="1">
+          <mxGeometry height="110" width="16" x="102" y="1285" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sys6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b9dcf5;strokeColor=#3f7fb3;" value="" vertex="1">
+          <mxGeometry height="110" width="16" x="422" y="1285" as="geometry" />
+        </mxCell>
+        <mxCell id="a_db6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c6e8cf;strokeColor=#4ea365;" value="" vertex="1">
+          <mxGeometry height="35" width="16" x="692" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="m27" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="27. Logout">
+          <mxGeometry relative="1" x="-0.375" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="102" y="1500" as="sourcePoint" />
+            <mxPoint x="422" y="1500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m28" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;" value="28. Update session status">
+          <mxGeometry relative="1" x="0.1852" y="15" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="430" y="1525" as="sourcePoint" />
+            <mxPoint x="700" y="1525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m29" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="29. Session ended">
+          <mxGeometry relative="1" x="0.3185" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="708" y="1550" as="sourcePoint" />
+            <mxPoint x="438" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m30" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;fontSize=11;dashed=1;" value="30. Logout successful">
+          <mxGeometry relative="1" x="0.25" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="438" y="1590" as="sourcePoint" />
+            <mxPoint x="118" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_emp7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9c7f0;strokeColor=#8e5cc4;" value="" vertex="1">
+          <mxGeometry height="110" width="16" x="102" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sys7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b9dcf5;strokeColor=#3f7fb3;" value="" vertex="1">
+          <mxGeometry height="110" width="16" x="422" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="a_db7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c6e8cf;strokeColor=#4ea365;" value="" vertex="1">
+          <mxGeometry height="35" width="16" x="692" y="1525" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3eefc;strokeColor=#9673a6;fontSize=16;fontStyle=1;verticalAlign=top;align=center;spacingTop=8;" value="Key Features Covered" vertex="1">
+          <mxGeometry height="130" width="1280" y="1640" as="geometry" />
+        </mxCell>
+        <mxCell id="feat0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=12;align=left;spacingLeft=10;verticalAlign=middle;" value="Employee&lt;br&gt;Management" vertex="1">
+          <mxGeometry height="70" width="200" x="80" y="1680" as="geometry" />
+        </mxCell>
+        <mxCell id="feat1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=12;align=left;spacingLeft=10;verticalAlign=middle;" value="Project&lt;br&gt;Allocation" vertex="1">
+          <mxGeometry height="70" width="200" x="310" y="1680" as="geometry" />
+        </mxCell>
+        <mxCell id="feat2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=12;align=left;spacingLeft=10;verticalAlign=middle;" value="Attendance" vertex="1">
+          <mxGeometry height="70" width="200" x="540" y="1680" as="geometry" />
+        </mxCell>
+        <mxCell id="feat3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=12;align=left;spacingLeft=10;verticalAlign=middle;" value="Salary" vertex="1">
+          <mxGeometry height="70" width="200" x="780" y="1670" as="geometry" />
+        </mxCell>
+        <mxCell id="feat4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontSize=12;align=left;spacingLeft=10;verticalAlign=middle;" value="Performance" vertex="1">
+          <mxGeometry height="70" width="200" x="1020" y="1670" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
